@@ -1,9 +1,11 @@
 #Text Adventure
 
-Made by Sabastian Taton and logan Shelly
+Made by Sabastian Taton and Logan Shelly
 
 A simple text game that uses statistics from Dungeons and Dragons for its weapons and monsters
-actions:
+Actions:
+
+
 Look
 Examine
 Attack
