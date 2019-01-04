@@ -46,10 +46,10 @@ def main():
     category, question, answers, correct, explanation = next_block(trivia)
     while category:
         print(category)
+        print(question)
         x =0
         for i in range(4):
-            x+=1
-            print(x, answers[i])
+            print(answers[i])
         answer = input("Your Answer:")
         if correct == answer:
                 print("Correct!")
@@ -57,9 +57,9 @@ def main():
         else:
                 print("Incorrect!")
         print(explanation)
-        print(score)
-        next_block(trivia)
-    print(score)
+        print("Score:",score)
+        category, question, answers, correct, explanation = next_block(trivia)
+    print("Final Score:",score)
     trivia.close()
     input("Press enter to exit the program.")
     sys.exit()

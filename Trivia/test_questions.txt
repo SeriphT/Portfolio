@@ -1,42 +1,41 @@
 Sabastian Taton Term 2 Final
 Variables
 If x=10, y=0,and i=8 what will i+b equal?
-A NameError
-80
-0
-A SyntaxError
-A NameError
+1 A NameError
+2 80
+3 0
+4 A SyntaxError
+1 A NameError
 The variable b is not defined, therefore a NameError message is the result
 Data Types
 The integer data type can contain numbers and a decimal
-True
-False
-n/a
-n/a
-False
+1 True
+2 False
+3 n/a
+4 n/a
+2 False
 An integer is a number without a decimal
 Loops
 A while loop will continue until a conditon is met
-True
-False
-n/a
-n/a
-True
+1 True
+2 False
+3 n/a
+4 n/a
+1 True
 While loops continue until a conditon is met to break the loop
 Operators
 The symbol ^ is a valid operator for what operation?
-Not Valid
-Addition
-Division
-Exponential
-None
+1 Not Valid
+2 Addition
+3 Division
+4 Exponential
+1 Not Valid
 The symbol ^ is not a valid operator for any operation
 Functions
 To call the function def list_name(first,last) /you MUST call a parameter to have it run correctly
-True
-False
-n/a
-n/a
-True
+1 True
+2 False
+3 n/a
+4 n/a
+1 True
 In the function, list_name, the parameters first and last must be given for the function to run
-
