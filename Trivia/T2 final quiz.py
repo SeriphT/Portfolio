@@ -34,10 +34,6 @@ def next_block(trivia):
     explanation = next_line(trivia)
     return category, question, answers, correct, explanation
 
-def welcome(title):
-    print("\t\tWelcome to Trivia Challenge!")
-    print('\t\t',title,'\t\t')
-
 def main():
     trivia = open_file("test_questions.txt", "r")
     title = next_line(trivia)
