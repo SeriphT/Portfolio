@@ -45,8 +45,8 @@ class Game:
         snd_folder = path.join(game_folder, 'snd')
         music_folder = path.join(game_folder, 'music')
         self.map_folder = path.join(game_folder, 'maps')
-        self.title_font = path.join(img_folder, 'ZOMBIE.TTF')
-        self.hud_font = path.join(img_folder, 'Impacted2.0.ttf')
+        self.title_font = path.join(img_folder, 'odinson-2000.ttf')
+        self.hud_font = path.join(img_folder, 'Fairies.otf')
         self.dim_screen = pg.Surface(self.screen.get_size()).convert_alpha()
         self.dim_screen.fill((0, 0, 0, 180))
         self.player_img = pg.image.load(path.join(img_folder, PLAYER_IMG)).convert_alpha()
@@ -229,13 +229,19 @@ class Game:
                     self.night = not self.night
 
     def show_start_screen(self):
-        pass
+        self.screen.fill(BLACK)
+        self.draw_text("Call of the Lost Key", self.title_font, 100, GOLD,
+                       WIDTH / 2, HEIGHT / 2, align="center")
+        self.draw_text("Press a key to start", self.title_font, 75, DMAGENTA,
+                       WIDTH / 2, HEIGHT * 3 / 4, align="center")
+        pg.display.flip()
+        self.wait_for_key()
 
     def show_go_screen(self):
         self.screen.fill(BLACK)
-        self.draw_text("GAME OVER", self.title_font, 100, RED,
+        self.draw_text("YOU DIED", self.title_font, 175, DARKRED,
                        WIDTH / 2, HEIGHT / 2, align="center")
-        self.draw_text("Press a key to start", self.title_font, 75, WHITE,
+        self.draw_text("Press a key to REsTART", self.title_font, 75, PALEYELLOW,
                        WIDTH / 2, HEIGHT * 3 / 4, align="center")
         pg.display.flip()
         self.wait_for_key()
